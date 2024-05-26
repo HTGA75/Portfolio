@@ -1,14 +1,198 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>Harshit Gupta</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Harshit Gupta</div>
         <nav>
-            <li>
-                <ul><a href="HTGA.html"><h3>Home</h3></a></ul>
-                <ul><a href="About.html"><h3>About Me</h3></a></ul>
-                <ul><a href="https://github.com/projects?query=is%3Aopen+creator%3A%40me"><h3>Projects</h3></a></ul>
-                <ul><a href="Contact.html"><h3>Contact</h3></a></ul>
-            </li>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
-    </body>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a web developer who loves to create functional websites.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile.jpg" alt="Profile Picture">
+            <div class="bio">
+                <p>Hi, I'm Harshit Gupta. I am learning webdev just because I should where as I
+                   more intereseted in backend programming.</p>
+                <!-- Add more bio content here -->
+            </div>
+        </div>
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git and GitHub</li>
+            <li>Java</li>
+            <li>Python</li>
+            <!-- Add more skills here -->
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project Image">
+                <h3>Project Title</h3>
+                <p>Brief description of the project.</p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Repeat for more projects -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/htga/">LinkedIn</a>
+            <a href="https://github.com/HTGA75">GitHub</a>
+            <!-- Add more social media links -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 HTGA. All rights reserved.</p>
+    </footer>
+
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-left: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        section {
+            padding: 2rem 1rem;
+        }
+        .about-container {
+            display: flex;
+            align-items: center;
+        }
+        .about-container img {
+            border-radius: 50%;
+            margin-right: 2rem;
+            width: 150px;
+            height: 150px;
+        }
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+        .skills li {
+            display: inline;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .projects-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 1rem;
+            padding: 1rem;
+            width: calc(33.333% - 2rem);
+            box-sizing: border-box;
+        }
+        .project-card img {
+            width: 100%;
+            height: auto;
+        }
+        .project-card h3 {
+            margin-top: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 0.5rem;
+        }
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .social-media a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
+    </style>
+</body>
 </html>
