@@ -26,10 +26,10 @@ nav a {
 }
 .hero {
     background: url('hero.jpg') no-repeat center center;
-    background-size: cover;
-    color: black;
+    background-size:cover;
+    color: white;
     text-align: center;
-    padding: 5rem 1rem;
+    padding: 5rem 1em;
 }
 section {
     padding: 2rem 1rem;
