@@ -1,8 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    text-align: center;
-}
 .logo{
     margin: 3px 0px;
     padding: 0px;
@@ -12,6 +10,8 @@ header{
     position: sticky;
     top: 0;
     opacity: 0.9;
+    text-align: center;
+}
 }
 nav ul {
     list-style-type: none;
@@ -45,8 +45,42 @@ nav li:hover{
     margin: 30px 50px;
     padding: 0px;
     border: 1px solid black;
+    text-align: center;
 }
 
 .hero h1{
     margin-top: 50px;
 }
+
+#about{
+    outline: 1px solid rgb(0, 0, 255);
+}
+
+#about h2{
+    margin-left: 20px;
+}
+#about img{
+    border-radius: 5px;
+}
+.My{
+    float: left;
+    padding-left: 30px;
+}
+
+.My.image{
+    width: 20%;
+}
+.My.bio{
+    width: 70%;
+}
+.bio-con::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .My.image, .My.bio {
+      width: 100%;
+    }
