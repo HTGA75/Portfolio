@@ -2,7 +2,8 @@ body{
     margin: 0;
     padding: 0;
 .logo{
-    margin: 3px 0px;
+    margin-top: 3px;
+    margin-bottom: -8px;
     padding: 0px;
     text-align: center;
 }
@@ -12,27 +13,29 @@ header{
     opacity: 0.9;
     text-align: center;
 }
-}
-nav ul {
+nav ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
     width: 100%;
+    border-radius: 0px 0px 3px 3px;
+    padding: 0px;
   }
 nav li{
     display: inline-block;
-    padding: 16px 10px;
-    margin: auto;
-    list-style-type: none;
+    Padding: 16px 10px;
+    margin: 0px;
 }
 nav a{
     color: white;
     text-decoration: none;
+    Padding: 16px 10px;
+    margin: 0px -10px;
 }
-nav li:hover{
-    background-color: #6a6b6a;
+
+nav a:hover{
+    background-color: #bdbdbd;
+    color: black;
 }
 
 #home{
