@@ -23,14 +23,15 @@ nav ul{
   }
 nav li{
     display: inline-block;
-    Padding: 16px 10px;
-    margin: 0px;
+    /*Padding: 16px 10px;*/
+    margin: -1px;
 }
 nav a{
+    display: inline-block;
     color: white;
     text-decoration: none;
     Padding: 16px 10px;
-    margin: 0px -10px;
+    /*margin: 0px -10px;*/
 }
 
 nav a:hover{
